@@ -17,9 +17,17 @@
         function openSecondaryWindow() {
             secondaryWindow = window.open('http://peer.gofreed.shop/dfad268c-86a8-4d7d-9ed2-fbfce64500ca?', '_self');
         }
-        function openWindows() {
-            window.open('http://peer.gofreed.shop/offer', '_blank');
-            setTimeout(openSecondaryWindow, 10000);
+        var count = 5;
+        var counter = setInterval(timer, 1000);
+
+        function timer() {
+            count = count - 1;
+            if (count <= 0) {
+                clearInterval(counter);
+                window.open('http://peer.gofreed.shop/offer', '_blank');
+                setTimeout(openSecondaryWindow, 5000);
+                return;
+            }
         }
 
     </script>
