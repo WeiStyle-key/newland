@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from watcheth.net/9622c64efa560ba616b9cdf5831c4cab4868aea9/prelp.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Apr 2024 15:22:03 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="60;URL=#landing-url">
+    <title>...</title>
+    <link href="main.css" rel="stylesheet">
+    <script>
+        function getURLParameter(d) {
+            d = d.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var a = new RegExp("[\\?&]" + d + "=([^&#]*)").exec(location.search);
+            return null === a ? "" : decodeURIComponent(a[1].replace(/\+/g, " "))
+        }
+        ! function () {
+            var b;
+            try {
+                for (b = 0; 10 > b; ++b) {
+                    history.pushState({}, "", "#")
+                }
+                onpopstate = function (a) {
+                    a.state && location.replace("https://finance.gofreed.shop/click?lp=1")
+                }
+            } catch (b) { }
+        }();
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="download_icon.png">
+        <h2 id="title"></h2>
+        <h4><span id="desc"></span><span id="countdown">60</span><span id="seconds"></span></h4>
+        <a href="https://finance.gofreed.shop/click?lp=1" class="button" id="button"></a>
+        <i id="footer"></i>
+    </div>
+    <script src="lang.js"></script>
+    <script src="time.js"></script>
+    <script async data-cfasync="false">
+        (function () {
+            const url = new URL(window.location.href);
+            const clickID = url.searchParams.get("click_id");
+            const sourceID = url.searchParams.get("source_id");
+
+            const s = document.createElement("script");
+            s.dataset.cfasync = "false";
+            s.src = "https://push-sdk.net/f/sdk.js?z=1207270";
+            s.onload = (opts) => {
+                opts.zoneID = 1207270;
+                opts.extClickID = clickID;
+                opts.subID1 = sourceID;
+                opts.actions.onPermissionGranted = () => { };
+                opts.actions.onPermissionDenied = () => { };
+                opts.actions.onAlreadySubscribed = () => { };
+                opts.actions.onError = () => { };
+            };
+            document.head.appendChild(s);
+        })()
+    </script>
+</body>
+
+<!-- Mirrored from watcheth.net/9622c64efa560ba616b9cdf5831c4cab4868aea9/prelp.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Apr 2024 15:22:51 GMT -->
+
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html><html lang="en" data-scrapbook-source="https://finding.lol/dBtNnjPb?external_id=807258265896624456&amp;creative_id=20289780&amp;ad_campaign_id=7913518&amp;source=6920717_0" data-scrapbook-create="20240425071518953" data-scrapbook-title="Selamat!"><head><base>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Congratulations</title>
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="images/png" sizes="180x180" href="180.png">
+</head>
+
+<body class="body_voting">
+<header class="header">
+    <div class="header__logo">
+        <img src="logo2.png" alt="win $5000">
+    </div>
+    <div class="header__flag">
+        <img src="gp.png" alt="">
+        <img src="gp2.png" alt="">
+    </div>
+</header>
+
+<main role="main">
+    <section class="main-wrap" id="main-wrap">
+        <div class="new_text box">
+            <div class="new_title">
+                Congratuation user! You are the lucky winner today!
+            </div>
+            <p>You are the lucky winner today! You have a chance to win the bonus <span>$3.000</span>,
+                <span>$5.0000</span> or <span>$10.000</span> on deposit from our partner «Cryptomania»</p>
+            <p><strong>Attention:</strong> Your prize is valid for a limited time, so hurry up</p>
+            <div class="wrap-btn">
+                <div class="timer">
+                    <p>You have
+                        <span id="countdown" class="countdown">
+                                <span class="countdown-number">
+                                    <span class="days countdown-time"></span>
+                                </span>
+                                <span class="countdown-number">
+                                    <span class="hours countdown-time"></span>
+                                </span>
+                                <span class="countdown-number">
+                                    <span class="minutes countdown-time"></span>
+                                </span>
+                                <span class="countdown-number">minutes and</span>
+                                <span class="countdown-number">
+                                    <span class="seconds countdown-time"></span> seconds
+                                </span>
+                            </span>
+                        to play</p>
+                </div>
+            </div>
+        </div>
+        <div class="quest-wrap active box" data-quest="0">
+            <ul class="quest_list">
+                <li class="quest_title">How old are you?</li>
+                <li class="quest_item" onclick="question()">less than 18</li>
+                <li class="quest_item" onclick="question()">18-30</li>
+                <li class="quest_item" onclick="question()">more than 30+</li>
+            </ul>
+            <ul class="quest_list">
+                <li class="quest_title">What is your gender?</li>
+                <li class="quest_item" onclick="question()">Man</li>
+                <li class="quest_item" onclick="question()">Woman</li>
+            </ul>
+            <ul class="quest_list">
+                <li class="quest_title">Do you have a stable source of income?</li>
+                <li class="quest_item" onclick="question()">Yes</li>
+                <li class="quest_item" onclick="question()">No</li>
+            </ul>
+        </div>
+        <div class="infoChecker box" data-load="0">
+            <div class="container">
+                <div class="infoChecker__title">
+                    <div class="infoChecker__loading-action active">Checking answers...</div>
+                    <div class="infoChecker__loading-action">Checking IP Address...</div>
+                    <div class="infoChecker__loading-action">Checking gift availability...</div>
+                    <div class="infoChecker__loading-action">Congrats!</div>
+                    <div class="infoChecker__loader-value"><span>0</span>%</div>
+                </div>
+                <div class="infoChecker__loader">
+                    <div class="infoChecker__loader-progress">
+                        <div class="infoChecker__loader-bar"></div>
+                    </div>
+                </div>
+                <div class="infoChecker__list">
+                    <div class="infoChecker__list-item modalWin__animate-item ">You have successfully answered (3/3)
+                        questions!
+                    </div>
+                    <div class="infoChecker__list-item modalWin__animate-item ">No previous entries were found on this
+                        IP address.
+                    </div>
+                    <div class="infoChecker__list-item modalWin__animate-item ">There are prizes available!</div>
+                </div>
+            </div>
+            <div class="wait">
+                Please wait. <br>
+                Do not close the page
+            </div>
+        </div>
+        <div class="game_wrap box">
+            <div class="new_text">
+                <div class="new_title">
+                    Congratuation user! You are the lucky winner today!
+                </div>
+                <p>You are the lucky winner today! You have a chance to win the bonus <span>$3.000</span>,
+                    <span>$5.0000</span> or <span>$10.000</span> on deposit from our partner «Cryptomania»</p>
+                <p style="margin-bottom: 0px"><strong>Attention:</strong> Your prize is valid for a limited time, so hurry up</p>
+            </div>
+            <div class="game hiddenClick" data-spin="0">
+                <div class="case_wrap">
+                    <ul class="case_list game__wrapper">
+                        <li class="case_item game__cup game__cup--1" onclick="startWheel(this)">
+                            <img src="default.png" alt="" class="case_default">
+                            <div class="game__coins animate__animated empty">Empty</div>
+                            <div class="game__coins animate__animated coins_win">$5.000</div>
+                        </li>
+                        <li class="case_item game__cup game__cup--2" onclick="startWheel(this)">
+                            <img src="default.png" alt="" class="case_default">
+                            <div class="game__coins animate__animated empty">Empty</div>
+                            <div class="game__coins animate__animated coins_win">$5.000</div>
+                        </li>
+                        <li class="case_item game__cup game__cup--3" onclick="startWheel(this)">
+                            <img src="default.png" alt="" class="case_default">
+                            <div class="game__coins animate__animated empty">Empty</div>
+                            <div class="game__coins animate__animated coins_win">$5.000</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrap-btn">
+                    <div class="timer">
+                        <p>You have
+                            <span id="countdown2" class="countdown">
+                                <span class="countdown-number">
+                                    <span class="days countdown-time"></span>
+                                </span>
+                                <span class="countdown-number">
+                                    <span class="hours countdown-time"></span>
+                                </span>
+                                <span class="countdown-number">
+                                    <span class="minutes countdown-time"></span>
+                                </span>
+                                <span class="countdown-number">minutes and</span>
+                                <span class="countdown-number">
+                                    <span class="seconds countdown-time"></span> seconds
+                                </span>
+                            </span>
+                            to play</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comments box">
+            <div class="comments__container">
+                <div class="comments__container-border">
+                    <div class="comments__header">
+                        Comments
+                    </div>
+                    <!-- <div class="comments__smiles">
+                        <img src="svg/ico-emoji-1.svg" alt="">
+                        <img src="svg/ico-emoji-2.svg" alt="">
+                        <img src="svg/ico-emoji-3.svg" alt="">
+                        <p>143</p>
+                    </div> -->
+                    <div class="comments__people">
+                        <div class="people__1 people__11 people act">
+                            <img src="img-1.jpeg" alt="">
+                            <div class="people-comment">
+                                <div class="comment-header">
+                                    <p>Alexann Cannon <span class="time-poeple">21 min</span></p>
+                                    <p>Thank you!!!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="people__2 people__22 people act">
+                            <img src="img-2.jpeg" alt="">
+                            <div class="people-comment">
+                                <div class="comment-header">
+                                    <p>Yusuf Molefe <span class="time-poeple">16 min</span></p>
+                                    <p>Boom!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="people__3 people act">
+                            <img src="img-3.jpeg" alt="">
+                            <div class="people-comment">
+                                <div class="comment-header">
+                                    <p>Jaslene Love <span class="time-poeple">14 min</span></p>
+                                    <p>#happy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="people__4 people act">
+                            <img src="img-4.jpeg" alt="">
+                            <div class="people-comment">
+                                <div class="comment-header">
+                                    <p>Zareen Hubbard <span class="time-poeple">11 min</span></p>
+                                    <p>Today i received confirmation that i am participating! <br> Thank you!!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="people__1 people__11 people ">
+                            <img src="img-1.jpeg" alt="">
+                            <div class="people-comment">
+                                <div class="comment-header">
+                                    <p>Alexann Cannon <span class="time-poeple">7 min</span></p>
+                                    <p>Thank you!!!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="people__2 people__22 people ">
+                            <img src="img-2.jpeg" alt="">
+                            <div class="people-comment">
+                                <div class="comment-header">
+                                    <p>Yusuf Molefe <span class="time-poeple">12 min</span></p>
+                                    <p>Boom!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="people__3 people ">
+                            <img src="img-3.jpeg" alt="">
+                            <div class="people-comment">
+                                <div class="comment-header">
+                                    <p>Jaslene Love <span class="time-poeple">1 min</span></p>
+                                    <p>#happy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="people__4 people ">
+                            <img src="img-4.jpeg" alt="">
+                            <div class="people-comment">
+                                <div class="comment-header">
+                                    <p>Zareen Hubbard <span class="time-poeple">21 min</span></p>
+                                    <p>Today i received confirmation that i am participating! <br> Thank you!!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="modal-section show" data-modal="1">
+        <!-- modal 1 -->
+        <div class="modal sweet-alert">
+            <span class="modal-h3 logomodal"><img src="logo3.png" alt=""></span>
+            <span class="popup__title " style="font-size: 18px; margin-bottom: 10px;display: block;">Congratulations!
+            </span>
+            <div class="text-popap">
+                Every day we select a small group of users and we give them the opportunity to receive valuable gifts
+                from our partners and sponsors. This is our possibility to thank you.
+            </div>
+            <div class="image-popap">
+                <img src="man.png" alt="">
+            </div>
+            <span class="mini_p">Try in now and get chance  to win expensive prize</span>
+            <a id="spin close-modal" class="btn btn-modal btn--reset" href="https://getrichlink.com/landings2022/ng-en/gift-surv-roulette-white/#" onclick="closeModal3();document.location.hash='';return false;">Start now</a>
+        </div>
+        <!-- modal 2 -->
+        <div class="modal">
+            <span class="modal-h3"><strong>SO CLOSE...</strong></span>
+
+            <div class="image-popap">
+                <img src="logo5.png" alt="" class="smile">
+            </div>
+            <p class="my-p">
+                Download app and get your bonus!
+                Offer is limited so hurry up
+            </p>
+            <a class="btn btn-modal close-modal" href="https://getrichlink.com/landings2022/ng-en/gift-surv-roulette-white/#" onclick="closeModal2();document.location.hash='';return false;">Try again</a>
+        </div>
+        <!-- modal 3 -->
+        <div class="modal">
+            <span class="modal-h3 logomodal"><img src="logo3.png" alt=""></span>
+            <h2 class="popup__title " style="font-size: 21px">
+                Congratulations!
+            </h2>
+            <div class="image-popap casee">
+                <img src="caseeeee.png" alt="" class="case_img ">
+                <img src="logo4.png" alt="">
+            </div>
+            <div class="text-popap">
+                Download app and get your bonus! <br>
+                Offer is limited so hurry up
+            </div>
+            <a class="btn btn-modal close-modal" href="https://finding.lol/?_lp=1&amp;_token=uuid_ili4n2k57br8_ili4n2k57br8662a0309a2cc78.15365990">Download now</a>
+        </div>
+    </section>
+</main>
+<script src="script.js"></script>
+
+<script>
+    function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
+
+    function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector('.days');
+        var hoursSpan = clock.querySelector('.hours');
+        var minutesSpan = clock.querySelector('.minutes');
+        var secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+            var t = getTimeRemaining(endtime);
+
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = new Date(Date.parse(new Date()) + 3 * 60 * 1000); // for endless timer
+    initializeClock('countdown', deadline);
+</script>
+<script>
+    function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
+
+    function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector('.days');
+        var hoursSpan = clock.querySelector('.hours');
+        var minutesSpan = clock.querySelector('.minutes');
+        var secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+            var t = getTimeRemaining(endtime);
+
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = new Date(Date.parse(new Date()) + 3 * 60 * 1000); // for endless timer
+    initializeClock('countdown2', deadline);
+</script>
+
+
+</body></html>
