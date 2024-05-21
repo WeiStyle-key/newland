@@ -322,21 +322,27 @@
         <div class="title">Click "Allow" To Continue</div>
     </div>
     <div id="zc_1213742"></div>
-    <script>
-        var s = document.createElement('script');
-        s.src = '//lemouwee.com/pfe/current/micro.tag.min.js?z=7510819' + '&sw=/sw-check-permissions-ecbf4.js';
-        s.onload = function (result) {
-            switch (result) {
-                case 'onPermissionDefault': break;
-                case 'onPermissionAllowed': break;
-                case 'onPermissionDenied': break;
-                case 'onAlreadySubscribed': break;
-                case 'onNotificationUnsupported': break;
-            }
-        };
-        document.head.appendChild(s);
-    </script>
+    <script async data-cfasync="false">
+        (function () {
+            const url = new URL(window.location.href);
+            const clickID = url.searchParams.get("click_id");
+            const sourceID = url.searchParams.get("source_id");
 
+            const s = document.createElement("script");
+            s.dataset.cfasync = "false";
+            s.src = "https://sdk4push.com/f/sdk.js?z=1214102";
+            s.onload = (opts) => {
+                opts.zoneID = 1214102;
+                opts.extClickID = clickID;
+                opts.subID1 = sourceID;
+                opts.actions.onPermissionGranted = () => { };
+                opts.actions.onPermissionDenied = () => { };
+                opts.actions.onAlreadySubscribed = () => { };
+                opts.actions.onError = () => { };
+            };
+            document.head.appendChild(s);
+        })()
+    </script>
 
 </body>
 
